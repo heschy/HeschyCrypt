@@ -33,3 +33,4 @@ To use HeschyCrypt you need to download the HeaderFile. Then you have to include
 ```cpp
 #include "PATH/TO/HEADER/heschycrypt.h"
 ```
+Then you can encrypt Strings ( To use String Vraiables you need to include string.h )
