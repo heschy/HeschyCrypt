@@ -79,11 +79,11 @@ int main()
 Encrypting/Decrypting without a Password works like this:
 
 ```cpp
-heschycrypt(MODE, STRING);
+heschycrypt(string MODE, string STRING);
 ```
 
 ### Encrypt/Decrypt Strings with a Password
 Encrypting/Decrypting with a Password works like this:
 ```cpp
-heschycrypt(MODE, STRING, PASSWD);
+heschycrypt(string MODE, string STRING, string PASSWD);
 ```
