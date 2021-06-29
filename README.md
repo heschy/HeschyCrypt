@@ -28,9 +28,29 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 
 ## How to use HeschyCrypt
+
+### 1.: Include the Lib
 To use HeschyCrypt you need to download the HeaderFile. Then you have to include it, just like This:
 
 ```cpp
 #include "PATH/TO/HEADER/heschycrypt.h"
 ```
-Then you can encrypt Strings ( To use String Vraiables you need to include string.h )
+
+### Encrypt Strings without a Password
+To encrypt a String with HeschyCrypt and write it to the Console you can write something like this:
+
+```cpp
+#include <string.h>      // Use The 'string' Type
+#include <iostream>      // Write to the Console
+#include "heschycrypt.h" // Include The HeschyCrypt Library
+using namespace std;
+
+int main()
+{
+    string str = "ThisStringWillBeEncrypted";
+    str = heschycrypt(HESCHYCRYPT_ENCRYPT, str);
+    cout << "Encrypted String: " << str;
+    return 0;
+}
+    
+```
