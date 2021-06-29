@@ -19,4 +19,4 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 | In Work? | Prblem |
 |-|-|
-| <ul><li>- [ ]</li></ul> | Passwords have to be Longer then the Text. |
+| <ul><li>- [ ] Not in Work</li></ul> | Passwords have to be Longer then the Text. |
