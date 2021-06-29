@@ -25,6 +25,7 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 |-|-|
 | <ul><li>- [ ] Not in Work</li></ul> | Passwords have to be Longer then the Text. |
 | <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
+| <ul><li>- [X] Not in Work</li></ul> | It may don't  use the complete Password. |
 
 
 ## How to use HeschyCrypt
