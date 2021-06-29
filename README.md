@@ -36,7 +36,7 @@ To use HeschyCrypt you need to download the HeaderFile. Then you have to include
 #include "PATH/TO/HEADER/heschycrypt.h"
 ```
 
-### Encrypt Strings without a Password
+### Encrypt/Decrypt Strings without a Password
 To encrypt a String with HeschyCrypt and write it to the Console you can write something like this:
 
 ```cpp
@@ -57,4 +57,22 @@ int main()
  The Application will Output this:
 ```
 Encrypted String: Ulr�l�������0#ef��2T���
+```
+
+To Decrypt we need to add one line more:
+ ```cpp
+#include <string.h>      // Use The 'string' Type
+#include <iostream>      // Write to the Console
+#include "heschycrypt.h" // Include The HeschyCrypt Library
+using namespace std;
+
+int main()
+{
+    string str = "ThisStringWillBeEncrypted";
+    str = heschycrypt(HESCHYCRYPT_ENCRYPT, str);
+    str = heschycrypt(HESCHYCRYPT_DECRYPT, str);
+    cout << "Encrypted String: " << str;
+    return 0;
+}
+    
 ```
