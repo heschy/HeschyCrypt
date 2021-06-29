@@ -23,14 +23,22 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 | In Work? | Problem |
 |-|-|
-| <ul><li>- [ ] Not in Work</li></ul> | Passwords have to be Longer then the Text. |
+| <ul><li>- [X] In Work</li></ul> | Passwords have to be Longer then the Text. |
 | <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
-| <ul><li>- [X] Not in Work</li></ul> | It may don't  use the complete Password. |
+| <ul><li>- [ ] Not in Work</li></ul> | It may don't  use the complete Password. |
 
-#### Problems
+### Problems
 
-### Passwords have to be Longer then the Text
-[DESCRIBTION IN WORK...]
+#### Passwords have to be Longer then the Text
+HeschyCrypt uses the ASCII codes of the letters to encrypt the String. If there are no letters in the Password, then there are no Codes and it wont work.
+
+#### The Method is unsecure
+The Algorythm is to simple.
+
+#### It may don't  use the complete Password
+
+If the String has 4 Letters then the Algorythm will only use the first 4 letters of the Password to encrypt.
+
 
 ## How to use HeschyCrypt
 
