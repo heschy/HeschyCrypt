@@ -2,7 +2,7 @@
 is a simple library to encrypt and decrypt strings. It isn't verry secure but simple and okay. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
 Here are some good Points to start with HeschyCrypt:
-How to use the HeschyCrypt Library
+[How to use the HeschyCrypt Library](#how-to-use-heschycrypt)
 
 
 ## Windows
