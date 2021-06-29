@@ -105,7 +105,7 @@ int main()
     cin >> password;
     str = heschycrypt(HESCHYCRYPT_ENCRYPT, str, password);
     password = "Placeholder";
-    cout << "Encrypted!" << endl << "GET ACCESS:\nPassword: ";
+    cout << "Encrypted!\n" << endl << "GET ACCESS:\nPassword: ";
     cin >> password;
     str_COPY = heschycrypt(HESCHYCRYPT_DECRYPT, str, password);
     cout << "Output: " << str_COPY << endl;
@@ -116,7 +116,3 @@ int main()
 }
     
 ```
-
-The Programm will do this:
-Ask you for a String and a Password, then it will encrypt the String with the Password.
-Then it thinks that you want to access the Unencryptet String. It ask  for a Password and try to decryot with the given Password, if the Passwd is Correct, it will work, if it is not correct, it wont work.
