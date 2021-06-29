@@ -17,6 +17,6 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 ### Problems
 
 
-| In Work? | Prblem |
+| In Work? | Problem |
 |-|-|
 | <ul><li>- [ ] Not in Work</li></ul> | Passwords have to be Longer then the Text. |
