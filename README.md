@@ -30,6 +30,6 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 ## How to use HeschyCrypt
 To use HeschyCrypt you need to download the HeaderFile. Then you have to include it, just like This:
 
-```
+```cpp
 #include "PATH/TO/HEADER/heschycrypt.h"
 ```
