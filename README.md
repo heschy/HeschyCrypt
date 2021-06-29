@@ -76,10 +76,14 @@ int main()
 }
     
 ```
-HeschyCrypt works like this:
+Encrypting/Decrypting without a Password works like this:
 
-```
+```cpp
 heschycrypt(MODE, STRING);
 ```
 
 ### Encrypt/Decrypt Strings with a Password
+Encrypting/Decrypting with a Password works like this:
+```cpp
+heschycrypt(MODE, STRING, PASSWD);
+```
