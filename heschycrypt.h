@@ -1,3 +1,9 @@
+//////////////////////////
+// This Library is part of the HeschyCrypt Project.
+// The HeschyCrypt Project is licenced under the GNU GPL 3.0
+// 
+
+
 #ifndef __HESCHYCRYPT__
     #define __HESCHYCRYPT__
     #define HESCHYCRYPT_ENCRYPT "HESCHYCRYPT_MODUS_ENCRYPT"
