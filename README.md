@@ -18,7 +18,7 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 - [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
 - [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
 
-### Problems
+### Problems in a Table
 
 
 | In Work? | Problem |
@@ -27,6 +27,10 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 | <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
 | <ul><li>- [X] Not in Work</li></ul> | It may don't  use the complete Password. |
 
+#### Problems
+
+### Passwords have to be Longer then the Text
+[DESCRIBTION IN WORK...]
 
 ## How to use HeschyCrypt
 
