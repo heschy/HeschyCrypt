@@ -1,8 +1,8 @@
 # HeschyCrypt
 is a simple library to encrypt and decrypt strings. It isn't verry secure but simple and okay. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
-Here are some good Points to start with HeschyCrypt:
-[How to use the HeschyCrypt Library](#how-to-use-heschycrypt)
+Here are some good Points to start with HeschyCrypt (actualy it's just one point):
+- [How to use the HeschyCrypt Library](#how-to-use-heschycrypt)
 
 
 ## Windows
@@ -28,3 +28,8 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 
 ## How to use HeschyCrypt
+To use HeschyCrypt you need to download the HeaderFile. Then you have to include it, just like This:
+
+```
+#include "PATH/TO/HEADER/heschycrypt.h"
+```
