@@ -7,7 +7,16 @@ On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with *
 ## Linux 
 On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
-## Todo
+## Todos
 
-- [X] usable for Windows    (*Tested with the DEV-CPP IDE*) 
-- [X] usable for Linux      (*Tested with the G++ Compiler*)
+### Finished
+
+- [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
+- [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
+
+### Problems
+
+
+| In Work? | Prblem |
+|-|-|
+| [ ] | Passwords have to be Longer then the Text. |
