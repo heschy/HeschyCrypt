@@ -2,12 +2,12 @@
 is a simple library to encrypt and decrypt strings. It isn't verry secure but simple and okay. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
 ## Windows
-It works fine in Windows ( ONLY IN VISUAL STUDIO ).
+In the moment I test the Library on Wine. I use the Dev-CPP IDE to Test it.
 
 ## Linux 
-It dosn't works fine in Linux, I try to change this, but I don't know whats the reason for the errors, because it works fine on Windows.
+On Linux my Library works verry fine.
 
 ## Todo
 
-- [X] usable for Windows
-- [ ] usable for Linux
+- [.] usable for Windows    (DEV-CPP)
+- [X] usable for Linux      (G++)
