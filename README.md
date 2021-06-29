@@ -54,3 +54,7 @@ int main()
 }
     
 ```
+ The Application will Output this:
+```
+Encrypted String: Ulr�l�������0#ef��2T���
+```
