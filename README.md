@@ -9,5 +9,5 @@ On Linux my Library works verry fine.
 
 ## Todo
 
-- [.] usable for Windows    (DEV-CPP)
+- [ ] usable for Windows    (DEV-CPP) -- TEST IN WORK
 - [X] usable for Linux      (G++)
