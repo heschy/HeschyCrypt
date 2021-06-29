@@ -79,11 +79,44 @@ int main()
 Encrypting/Decrypting without a Password works like this:
 
 ```cpp
-heschycrypt(string MODE, string STRING);
+heschycrypt(string MODE, string STRING); // The ArgumentTypes are string,string,string
 ```
 
 ### Encrypt/Decrypt Strings with a Password
 Encrypting/Decrypting with a Password works like this:
 ```cpp
-heschycrypt(string MODE, string STRING, string PASSWD);
+heschycrypt(MODE, STRING, PASSWD);
 ```
+We can write a simple Programm like this with the Password-Function:
+ ```cpp
+#include <string.h>      // Use The 'string' Type
+#include <iostream>      // Write to the Console
+#include "heschycrypt.h" // Include The HeschyCrypt Library
+using namespace std;
+
+int main()
+{
+    string str = "PlaceHolder";
+    string password = "PlaceHolder";
+    string str_COPY = str;
+    cout << "Input: ";
+    cin >> str;
+    cout << "Password: ";
+    cin >> password;
+    str = heschycrypt(HESCHYCRYPT_ENCRYPT, str, password);
+    password = "Placeholder";
+    cout << "Encrypted!" << endl << "GET ACCESS:\nPassword: ";
+    cin >> password;
+    str_COPY = heschycrypt(HESCHYCRYPT_DECRYPT, str, password);
+    cout << "Output: " << str_COPY << endl;
+    
+    cout << "\n\n\nPress Enter to Quit...";
+    cin.get();
+    return 0;
+}
+    
+```
+
+The Programm will do this:
+Ask you for a String and a Password, then it will encrypt the String with the Password.
+Then it thinks that you want to access the Unencryptet String. It ask  for a Password and try to decryot with the given Password, if the Passwd is Correct, it will work, if it is not correct, it wont work.
