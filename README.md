@@ -76,3 +76,10 @@ int main()
 }
     
 ```
+HeschyCrypt works like this:
+
+```
+heschycrypt(MODE, STRING);
+```
+
+### Encrypt/Decrypt Strings with a Password
