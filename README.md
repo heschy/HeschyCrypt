@@ -22,9 +22,10 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 ### Problems in a Table
 
 
-| In Work? | Problem |
+| Status | Problem |
 |-|-|
 | <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
+| <ul><li>- [X] Solved</li></ul> | The Password needs to be longer then the Text. |
 | <ul><li>- [ ] Not in Work</li></ul> | It may don't  use the complete Password. |
 
 ### Problems
