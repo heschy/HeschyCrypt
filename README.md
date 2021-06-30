@@ -23,14 +23,10 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 | In Work? | Problem |
 |-|-|
-| <ul><li>- [X] In Work</li></ul> | Passwords have to be Longer then the Text. |
 | <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
 | <ul><li>- [ ] Not in Work</li></ul> | It may don't  use the complete Password. |
 
 ### Problems
-
-#### Passwords have to be Longer then the Text
-HeschyCrypt uses the ASCII codes of the letters to encrypt the String. If there are no letters in the Password, then there are no Codes and it wont work.
 
 #### The Method is unsecure
 The Algorythm is to simple.
