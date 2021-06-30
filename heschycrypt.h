@@ -34,6 +34,12 @@
     string heschycrypt(const string mode, string str, string passwd)
     {
         int ascii = 0;
+
+        while(passwd.length()<str.length())
+        {
+            passwd.append(passwd);
+        }
+
         if(mode == HESCHYCRYPT_ENCRYPT) {
             for (int i = 0; i < str.length(); i++)
             {
@@ -47,6 +53,9 @@
                 ascii = str.at(i) -= ((i + 1) * (i + passwd.at(i)));
                 str[i] = (char)ascii;
             }
+        }
+        else {
+            cerr << "\aError" << endl;
         }
         return str;
     }
