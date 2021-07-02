@@ -9,6 +9,8 @@
     #define HESCHYCRYPT_ENCRYPT "HESCHYCRYPT_MODUS_ENCRYPT"
     #define HESCHYCRYPT_DECRYPT "HESCHYCRYPT_MODUS_DECRYPT"
     #include <string.h>
+    #include <fstream>
+    #include <assert.h>
     using namespace std;
 
     string heschycrypt(const string mode, string str)
@@ -59,4 +61,77 @@
         }
         return str;
     }
+    
+    bool heschycrypt_file(string mode,string filename)
+    {
+        string filename = "/tmp/moz/test.txt";
+        string line;
+        ifstream ifile;
+        ifile.open(filename);
+        ofstream ofile;
+        ofile.open(filename.append(".heschycrypt"));
+        if(!ofile.is_open())
+        {
+            return false;
+        }    
+        if(!assert(ifile.is_open())
+        {
+           return false;
+        }
+
+        if(mode == HESCHYCRYPT_ENCRYPT)
+        {
+            while(getline(ifile, line))
+            {
+                ofile << heschycrypt(HESCHYCRYPT_ENCRYPT,line) << endl;
+            }
+        }
+        else if(mode == HESCHYCRYPT_DECRYPT)
+        {
+            while(getline(ifile, line))
+            {
+                ofile << heschycrypt(HESCHYCRYPT_DECRYPT,line) << endl;
+            }
+        }
+        ifile.close();
+        ofile.close();
+        return true;
+    }
+           
+    bool heschycrypt_file(string mode,string filename, string passwd)
+    {
+        string filename = "/tmp/moz/test.txt";
+        string line;
+        ifstream ifile;
+        ifile.open(filename);
+        ofstream ofile;
+        ofile.open(filename.append(".heschycrypt"));
+        if(!ofile.is_open())
+        {
+            return false;
+        }    
+        if(!assert(ifile.is_open())
+        {
+           return false;
+        }
+
+        if(mode == HESCHYCRYPT_ENCRYPT)
+        {
+            while(getline(ifile, line))
+            {
+                ofile << heschycrypt(HESCHYCRYPT_ENCRYPT,line,passwd) << endl;
+            }
+        }
+        else if(mode == HESCHYCRYPT_DECRYPT)
+        {
+            while(getline(ifile, line))
+            {
+                ofile << heschycrypt(HESCHYCRYPT_DECRYPT,line,passwd) << endl;
+            }
+        }
+        ifile.close();
+        ofile.close();
+        return true;
+    }
+    
 #endif
