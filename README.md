@@ -8,6 +8,7 @@ On Windows my Library works verry fine.
 ```
 System: Ubuntu 20.04
 IDE: Dev C++ IDE
+Compiler: Default
 Wine Version: 5.0
 Wine Configuration: Windows 7
 ```
@@ -17,6 +18,7 @@ On Linux my Library works verry fine.
 
 ```
 System: Ubuntu 20.04
+IDE: ---
 Compiler: G++
 ```
 
