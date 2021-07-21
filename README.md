@@ -9,7 +9,7 @@ On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with *
 
 ```
 System: Ubuntu 20.04
-Compiler: G++
+IDE: Dev C++ IDE
 Wine Version: 5.0
 Wine Configuration: Windows 7
 ```
