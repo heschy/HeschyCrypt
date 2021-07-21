@@ -8,12 +8,20 @@ Here are some good Points to start with HeschyCrypt (actualy it's just one point
 ## Windows
 On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with ***WINE 5.0***!
 
+
+```
+System: Ubuntu 20.04
+Compiler: G++
+Wine Version: 5.0
+Wine Configuration: Windows 7
+```
+
 ## Linux 
 On Linux my Library works verry fine. 
 
 ```
-System: ***Ubuntu 20.04***
-Compiler: ***G++***
+System: Ubuntu 20.04
+Compiler: G++
 ```
 
 ## Todos
