@@ -12,7 +12,8 @@ On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with *
 On Linux my Library works verry fine. 
 
 ```
-The Lib is tested on ***Ubuntu 20.04***!
+System: ***Ubuntu 20.04***
+Compiler: ***G++***
 ```
 
 ## Todos
