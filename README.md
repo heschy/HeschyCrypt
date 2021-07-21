@@ -2,10 +2,8 @@
 is a simple library to encrypt and decrypt strings. It isn't verry secure but easy to use. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
 
-
 ## Windows
-On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with ***WINE 5.0***!
-
+On Windows my Library works verry fine.
 
 ```
 System: Ubuntu 20.04
@@ -52,7 +50,7 @@ If the String has 4 Letters then the Algorythm will only use the first 4 letters
 
 ## How to use HeschyCrypt
 
-### 1.: Include the Lib
+### Include the Headerfile
 To use HeschyCrypt you need to download the HeaderFile. Then you have to include it, just like This:
 
 ```cpp
