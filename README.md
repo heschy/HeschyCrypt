@@ -11,33 +11,6 @@ On Windows my Library works verry fine. The Lib is tested on Ubuntu 20.04 with *
 ## Linux 
 On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
-## Todos
-
-### Finished
-
-- [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
-- [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
-- [X] Problem: Password needs to be longer then the Text ( SOLVED )
-
-### Problems in a Table
-
-
-| Status | Problem |
-|-|-|
-| <ul><li>- [ ] Not in Work</li></ul> | The Method is unsecure. |
-| <ul><li>- [ ] In Work</li></ul> | It may don't  use the complete Password. |
-| <ul><li>- [ ] Not in Work</li></ul> | If the INT overloads, some PCs wont react the same way then other. |
-| <ul><li>- [X] Solved</li></ul> | The Password needs to be longer then the Text. |
-
-### Problems
-
-#### The Method is unsecure
-The Algorythm is to simple.
-
-#### It may don't  use the complete Password
-
-If the String has 4 Letters then the Algorythm will only use the first 4 letters of the Password to encrypt.
-
 
 ## How to use HeschyCrypt
 
