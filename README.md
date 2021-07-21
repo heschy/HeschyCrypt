@@ -15,9 +15,9 @@ On Linux my Library works verry fine. The Lib is tested on ***Ubuntu 20.04***!
 
 ### Finished
 
- [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
- [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
- [X] Problem: Password needs to be longer then the Text ( SOLVED )
+- [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
+- [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
+- [X] Problem: Password needs to be longer then the Text ( SOLVED )
 
 ### Problems in a Table
 
