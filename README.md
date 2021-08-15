@@ -2,6 +2,14 @@
 is a simple library to encrypt and decrypt strings. It isn't verry secure but easy to use. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
 
+## Error Codes
+
+| Code | Descibtion |
+|---|---|
+|404| The `heschycrypt()` has two modes: DECRYPT and ENCRYPT. Error 404 appears if you try to start it in an other mode.
+
+
+
 ## Windows
 On Windows my Library works verry fine.
 
@@ -30,15 +38,15 @@ Compiler: G++
 - [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
 - [X] Problem: Password needs to be longer then the Text ( SOLVED )
 
-### Problems in a Table
+### In Work
 
+In Work It may don't  use the complete Password.
 
-| Status | Problem |
-|-|-|
-| Not in Work | The Method is unsecure. |
-| In Work | It may don't  use the complete Password. |
-| Not in Work | If the INT overloads, some PCs wont react the same way then other. |
-| Solved | The Password needs to be longer then the Text. |
+### To do Later...
+
+The Method is unsecure. 
+If the INT overloads, some PCs wont react the same way then other.
+
 
 ### Problems
 
