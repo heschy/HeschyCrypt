@@ -36,7 +36,7 @@ Compiler: G++
 
 - [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
 - [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
-- [X] Problem: Password needs to be longer then the Text ( SOLVED )
+- [X] Problem: Password needs to be longer then the Text
 
 ### In Work
 
