@@ -10,7 +10,7 @@ is a simple library to encrypt and decrypt strings. It isn't verry secure but ea
 
 
 
-## Windows
+## Windows ( Wine )
 On Windows my Library works verry fine.
 
 ```
