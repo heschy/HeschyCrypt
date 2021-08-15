@@ -40,7 +40,7 @@ Compiler: G++
 
 ### In Work
 
-In Work It may don't  use the complete Password.
+If the Password is longer then the text, it won't not use the complete password.
 
 ### To do Later...
 
