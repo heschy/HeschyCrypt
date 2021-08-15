@@ -6,7 +6,7 @@ is a simple library to encrypt and decrypt strings. It isn't verry secure but ea
 
 | Code | Descibtion |
 |---|---|
-|404| The `heschycrypt()` has two modes: DECRYPT and ENCRYPT. Error 404 appears if you try to start it in an other mode.
+|404| `heschycrypt()` has two modes: DECRYPT and ENCRYPT. Error 404 appears if you try to start it in an other mode.
 
 
 
