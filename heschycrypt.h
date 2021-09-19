@@ -12,24 +12,39 @@
     #include <iostream>
     #include <assert.h>
     using namespace std;
+    
+    string reverse_str(string str)
+	{
+	    int n = str.length();
+	 
+	   
+	    for (int i = 0; i < n / 2; i++)
+	        swap(str[i], str[n - i - 1]);
+	    return str;
+	}
 
     string heschycrypt(const string mode, string str)
     {
         int ascii = 0;
+    
+        
         if(mode == HESCHYCRYPT_ENCRYPT) {
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) += ((i + 1) * (i + 1));
                 str[i] = (char)ascii;
             }
+            str = reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
+        	str = reverse_str(str);
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) -= ((i + 1) * (i + 1));
                 str[i] = (char)ascii;
             }
         }
+        
         return str;
     }
     
@@ -48,8 +63,10 @@
                 ascii = str.at(i) += ((i + 1) * (i + passwd.at(i)));
                 str[i] = (char)ascii;
             }
+            str = reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
+        	str = reverse_str(str);
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) -= ((i + 1) * (i + passwd.at(i)));
