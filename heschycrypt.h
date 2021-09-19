@@ -9,7 +9,7 @@
     #define HESCHYCRYPT_ENCRYPT "HESCHYCRYPT_MODUS_ENCRYPT"
     #define HESCHYCRYPT_DECRYPT "HESCHYCRYPT_MODUS_DECRYPT"
     #include <string.h>
-    #include <fstream>
+    #include <iostream>
     #include <assert.h>
     using namespace std;
 
