@@ -32,17 +32,24 @@
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) += ((i + 1) * (i + 1));
+                ascii = str.at(i) += ((i - 2) * (i + 1));
+                ascii = str.at(i) += ((i - 3) * (i + 2));
+                ascii = str.at(i) += ((i - 2) * (i + 3));
                 str[i] = (char)ascii;
             }
             str = reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
         	str = reverse_str(str);
-            for (int i = 0; i < str.length(); i++)
+			for (int i = 0; i < str.length(); i++)
             {
+            	ascii = str.at(i) -= ((i - 2) * (i + 3));
+            	ascii = str.at(i) -= ((i - 3) * (i + 2));
+            	ascii = str.at(i) -= ((i - 2) * (i + 1));
                 ascii = str.at(i) -= ((i + 1) * (i + 1));
                 str[i] = (char)ascii;
             }
+            
         }
         
         return str;
@@ -61,6 +68,9 @@
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) += ((i + 1) * (i + passwd.at(i)));
+                ascii = str.at(i) += ((i - 2) * (i + 1));
+                ascii = str.at(i) += ((i - 3) * (i + 2));
+                ascii = str.at(i) += ((i - 2) * (i + 3));
                 str[i] = (char)ascii;
             }
             str = reverse_str(str);
@@ -70,6 +80,9 @@
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) -= ((i + 1) * (i + passwd.at(i)));
+                ascii = str.at(i) -= ((i - 2) * (i + 3));
+            	ascii = str.at(i) -= ((i - 3) * (i + 2));
+            	ascii = str.at(i) -= ((i - 2) * (i + 1));
                 str[i] = (char)ascii;
             }
         }
