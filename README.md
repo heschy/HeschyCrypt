@@ -21,6 +21,15 @@ Wine Version: 5.0
 Wine Configuration: Windows 7
 ```
 
+## Windows
+On Windows my Library works verry fine.
+
+```
+System: Windows 10 Pro x64
+IDE: Embarcadero Dev C++ IDE
+Compiler: 32 Bit - Release
+```
+
 ## Linux 
 On Linux my Library works verry fine. 
 
