@@ -14,14 +14,13 @@
     using namespace std;
     
     string reverse_str(string str)
-	{
-	    int n = str.length();
-	 
-	   
-	    for (int i = 0; i < n / 2; i++)
-	        swap(str[i], str[n - i - 1]);
-	    return str;
-	}
+    {
+        for (int i = 0; i < str.length() / 2; i++)
+        {
+            swap(str[i], str[str.length() - i - 1]);
+        }
+        return str;
+    }
 
     string heschycrypt(const string mode, string str)
     {
@@ -34,18 +33,30 @@
                 ascii = str.at(i) += ((i + 1) * (i + 1));
                 ascii = str.at(i) += ((i - 2) * (i + 1));
                 ascii = str.at(i) += ((i - 3) * (i + 2));
-                ascii = str.at(i) += ((i - 2) * (i + 3));
+                ascii = str.at(i) += ((i - 4) * (i + 3));
+                ascii = str.at(i) += ((i - 5) * (i + 4));
+                ascii = str.at(i) += ((i - 6) * (i + 5));
+                ascii = str.at(i) += ((i - 7) * (i + 6));
+                ascii = str.at(i) += ((i - 8) * (i + 7));
+                ascii = str.at(i) += ((i - 9) * (i + 8));
+                ascii = str.at(i) += ((i - 10) * (i + 9));
                 str[i] = (char)ascii;
             }
             str = reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
-        	str = reverse_str(str);
-			for (int i = 0; i < str.length(); i++)
+            str = reverse_str(str);
+            for (int i = 0; i < str.length(); i++)
             {
-            	ascii = str.at(i) -= ((i - 2) * (i + 3));
-            	ascii = str.at(i) -= ((i - 3) * (i + 2));
-            	ascii = str.at(i) -= ((i - 2) * (i + 1));
+                ascii = str.at(i) -= ((i - 10) * (i + 9));
+                ascii = str.at(i) -= ((i - 9) * (i + 8));
+                ascii = str.at(i) -= ((i - 8) * (i + 7));
+                ascii = str.at(i) -= ((i - 7) * (i + 6));
+                ascii = str.at(i) -= ((i - 6) * (i + 5));
+                ascii = str.at(i) -= ((i - 5) * (i + 4));                
+                ascii = str.at(i) -= ((i - 4) * (i + 3));
+                ascii = str.at(i) -= ((i - 3) * (i + 2));
+                ascii = str.at(i) -= ((i - 2) * (i + 1));
                 ascii = str.at(i) -= ((i + 1) * (i + 1));
                 str[i] = (char)ascii;
             }
@@ -70,19 +81,31 @@
                 ascii = str.at(i) += ((i + 1) * (i + passwd.at(i)));
                 ascii = str.at(i) += ((i - 2) * (i + 1));
                 ascii = str.at(i) += ((i - 3) * (i + 2));
-                ascii = str.at(i) += ((i - 2) * (i + 3));
+                ascii = str.at(i) += ((i - 4) * (i + 3));
+                ascii = str.at(i) += ((i - 5) * (i + 4));
+                ascii = str.at(i) += ((i - 6) * (i + 5));
+                ascii = str.at(i) += ((i - 7) * (i + 6));
+                ascii = str.at(i) += ((i - 8) * (i + 7));
+                ascii = str.at(i) += ((i - 9) * (i + 8));
+                ascii = str.at(i) += ((i - 10) * (i + 9));
                 str[i] = (char)ascii;
             }
             str = reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
-        	str = reverse_str(str);
+            str = reverse_str(str);
             for (int i = 0; i < str.length(); i++)
             {
+                ascii = str.at(i) -= ((i - 10) * (i + 9));
+                ascii = str.at(i) -= ((i - 9) * (i + 8));
+                ascii = str.at(i) -= ((i - 8) * (i + 7));
+                ascii = str.at(i) -= ((i - 7) * (i + 6));
+                ascii = str.at(i) -= ((i - 6) * (i + 5));
+                ascii = str.at(i) -= ((i - 5) * (i + 4));                
+                ascii = str.at(i) -= ((i - 4) * (i + 3));
+                ascii = str.at(i) -= ((i - 3) * (i + 2));
+                ascii = str.at(i) -= ((i - 2) * (i + 1));
                 ascii = str.at(i) -= ((i + 1) * (i + passwd.at(i)));
-                ascii = str.at(i) -= ((i - 2) * (i + 3));
-            	ascii = str.at(i) -= ((i - 3) * (i + 2));
-            	ascii = str.at(i) -= ((i - 2) * (i + 1));
                 str[i] = (char)ascii;
             }
         }
