@@ -62,6 +62,9 @@
             }
             
         }
+        else {
+            cerr << "\aError (ErrorCode 1)" << endl;
+        }
         
         return str;
     }
@@ -110,7 +113,7 @@
             }
         }
         else {
-            cerr << "\aError" << endl;
+            cerr << "\aError (ErrorCode 1)" << endl;
         }
         return str;
     }
