@@ -6,12 +6,12 @@ is a simple library to encrypt and decrypt strings. It isn't verry secure but ea
 
 | Code | Descibtion |
 |---|---|
-|404| `heschycrypt()` has two modes: DECRYPT and ENCRYPT. Error 404 appears if you try to start it in an other mode.
+|1| `heschycrypt()` has two modes: DECRYPT and ENCRYPT. Error 1 appears if you try to start it in an other mode.
 
 
 
-## Windows ( Wine )
-On Windows my Library works verry fine.
+## Linux with Wine
+On Wine my Library works verry fine.
 
 ```
 System: Ubuntu 20.04
