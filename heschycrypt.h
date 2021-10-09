@@ -25,7 +25,6 @@
     string heschycrypt(const string mode, string str)
     {
         int ascii = 0;
-    
         
         if(mode == HESCHYCRYPT_ENCRYPT) {
             for (int i = 0; i < str.length(); i++)
@@ -72,6 +71,11 @@
     string heschycrypt(const string mode, string str, string passwd)
     {
         int ascii = 0;
+
+        if(passwd.length()>str.lengt())
+        {
+            // TODO: Hash the Password with a SHA
+        }
 
         while(passwd.length()<str.length())
         {
