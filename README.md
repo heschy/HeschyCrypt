@@ -45,11 +45,10 @@ Compiler: G++
 
 - [X] HeschyCrypt for Windows    (*Tested with the DEV-CPP IDE*) 
 - [X] HeschyCrypt for Linux      (*Tested with the G++ Compiler*)
-- [X] Problem: Password needs to be longer then the Text
-
+- [X] Bug_hc0
 ### In Work
 
-[Bug_hc0](https://github.com/heschy/BugFix#bugfix_hc0)
+[Bug_hc1](https://github.com/heschy/BugFix#bugfix_hc1)
 
 ### To do Later...
 
