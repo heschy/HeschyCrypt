@@ -49,7 +49,7 @@ Compiler: G++
 
 ### In Work
 
-If the Password is longer then the text, it won't not use the complete password.
+[Bug_hc0](https://github.com/heschy/BugFix#bugfix_hc0)
 
 ### To do Later...
 
