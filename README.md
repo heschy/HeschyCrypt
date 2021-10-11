@@ -1,6 +1,8 @@
 # HeschyCrypt
 is a simple library to encrypt and decrypt strings. It isn't verry secure but easy to use. ***HeschyCrypt*** is good to save some data, but the decrypting is **verry** simple.
 
+## Bugs/Bugfixes
+[Here are all Bugs listed](https://github.com/heschy/BugFix/blob/main/README.md#buxfix-family-hc-heschycrypt)
 
 ## Error Codes
 
