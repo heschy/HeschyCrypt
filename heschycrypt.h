@@ -4,8 +4,7 @@
 // 
 
 
-#ifndef __HESCHYCRYPT__
-    #define __HESCHYCRYPT__
+#ifndef HESCHYCRYPT_ENCRYPT
     #define HESCHYCRYPT_ENCRYPT "HESCHYCRYPT_MODUS_ENCRYPT"
     #define HESCHYCRYPT_DECRYPT "HESCHYCRYPT_MODUS_DECRYPT"
     #include <string.h>
@@ -13,7 +12,7 @@
     #include <assert.h>
     using namespace std;
     
-    string reverse_str(string str)
+    string heschycrypt_reverse_str(string str)
     {
         for (int i = 0; i < str.length() / 2; i++)
         {
@@ -41,10 +40,10 @@
                 ascii = str.at(i) += ((i - 10) * (i + 9));
                 str[i] = (char)ascii;
             }
-            str = reverse_str(str);
+            str = heschycrypt_reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
-            str = reverse_str(str);
+            str = heschycrypt_reverse_str(str);
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) -= ((i - 10) * (i + 9));
@@ -72,9 +71,9 @@
     {
         int ascii = 0;
 
-        if(passwd.length()>str.lengt())
+        if(passwd.length()>str.length())
         {
-            // TODO: Hash the Password with a SHA
+            cerr << "Database Uncomplete" << endl;
         }
 
         while(passwd.length()<str.length())
@@ -97,10 +96,10 @@
                 ascii = str.at(i) += ((i - 10) * (i + 9));
                 str[i] = (char)ascii;
             }
-            str = reverse_str(str);
+            str = heschycrypt_reverse_str(str);
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
-            str = reverse_str(str);
+            str = heschycrypt_reverse_str(str);
             for (int i = 0; i < str.length(); i++)
             {
                 ascii = str.at(i) -= ((i - 10) * (i + 9));
