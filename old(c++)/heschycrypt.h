@@ -5,8 +5,8 @@
 
 
 #ifndef HESCHYCRYPT_ENCRYPT
-    #define HESCHYCRYPT_ENCRYPT "HESCHYCRYPT_MODUS_ENCRYPT"
-    #define HESCHYCRYPT_DECRYPT "HESCHYCRYPT_MODUS_DECRYPT"
+    #define HESCHYCRYPT_ENCRYPT "MODE_ENCRYPT"
+    #define HESCHYCRYPT_DECRYPT "MODE_DECRYPT"
     #include <string.h>
     #include <iostream>
     #include <assert.h>
@@ -69,13 +69,14 @@
     
     string heschycrypt(const string mode, string str, string passwd)
     {
+        string HESCHYCRYPT_HASH = "640559ec2db66f7e52fc670d2294169763a96f4f";
         int ascii = 0;
 
-        if(passwd.length()>str.length())
+        while(passwd.length()>str.length())
         {
-            cerr << "Database Uncomplete" << endl;
+            str.append(HESCHYCRYPT_HASH);
         }
-
+        
         while(passwd.length()<str.length())
         {
             passwd.append(passwd);
@@ -97,6 +98,10 @@
                 str[i] = (char)ascii;
             }
             str = heschycrypt_reverse_str(str);
+            while(passwd.length()>str.length())
+            {
+                str.append(HESCHYCRYPT_HASH);
+            }
         }
         else if(mode == HESCHYCRYPT_DECRYPT) {
             str = heschycrypt_reverse_str(str);
@@ -114,11 +119,14 @@
                 ascii = str.at(i) -= ((i + 1) * (i + passwd.at(i)));
                 str[i] = (char)ascii;
             }
+            while(passwd.length()>str.length())
+            {
+                str.replace(str.find(HESCHYCRYPT_HASH), HESCHYCRYPT_HASH.length(), "\0");
+            }
         }
         else {
             cerr << "\aError (ErrorCode 1)" << endl;
         }
         return str;
     }
-    
 #endif
