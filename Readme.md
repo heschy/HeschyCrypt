@@ -1,5 +1,5 @@
 # HeschyCrypt
-Heschycrypt is an ecnryption/decryption library for Java and C/C++.
+Heschycrypt is an encryption/decryption library for Java and C/C++.
 
 ```
 Warning: C++ Version is still under development. (BETA)
