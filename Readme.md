@@ -10,11 +10,5 @@ Heschycrypt is an encryption/decryption library for Java and Python. There is al
 Directorys:
 ```
 / - Root
-/c++ - C++ Version
-/java - Java Version
-/java/lib - HeschyCrypt Library
-/java/gui - HeschyCrypt Client
-/release - Executable Files
-/release/jar - Java Library Files.
-/release/exe - HeschyCrypt Client Files.
+/py - Python Files
 ```
