@@ -1,13 +1,11 @@
 # HeschyCrypt
-Heschycrypt is an encryption/decryption library for Java and C/C++.
+Heschycrypt is an encryption/decryption library for Java and Python. There is also an unstable version for C/C++.
 
 ```
+Info: If you want to access C++/Java Version you have to switch to the 'Java/C++-Version' branch.
 Warning: C++ Version is still under development. (BETA)
 Warning: Java Version is still under development. (ALPHA)
 ```
-
-Java version will be here soon.
-C++ version is in the 'c++' Subfolder.
 
 Directorys:
 ```
